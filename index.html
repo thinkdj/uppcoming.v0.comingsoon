@@ -11,15 +11,15 @@
 <!-- FB META -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Uppcoming: Pre-release movie buzz"/>
-<meta property="og:image" content="http://uppcoming.com/soon/soon/upplogo_square.png" />
+<meta property="og:image" content="/soon/upplogo_square.png" />
 <meta property="og:description" content="We're launching very soon. Follow us on Facebook and stay tuned..."/>
 <!-- Styles and Scripts -->
-<link rel="shortcut icon" type="image/png" href="http://uppcoming.com/soon/favicon.png" />
+<link rel="shortcut icon" type="image/png" href="/soon/favicon.png" />
 <style type="text/css">
 <!--
 *  { margin:0;padding:0;outline:0;}
 body {
-	background: #F5F5F5 url(http://uppcoming.com/soon/soon/bg_body.png);
+	background: #F5F5F5 url(/soon/bg_body.png);
 	margin:0;padding:0;
 	width: 100%;
 	height: 100%;
@@ -28,9 +28,9 @@ body {
 	font-weight: bold;
   overflow: hidden;
 }
-#c-outer{ height:760px; overflow: hidden; position: relative; width: 100%; 
-  /* background: url(soon/homepage_bg.png) no-repeat center center; */ 
-  background: url(http://i.imageox.com/115fb35e508d.png) no-repeat center center;
+#c-outer{ height:760px; overflow: hidden; position: relative; width: 100%;
+	/*background: url(http://i.imageox.com/115fb35e508d.png) no-repeat center center;*/
+   background: url(soon/homepage_bg.png) no-repeat center center;
   }
 #c-outer[id] {display: table; position: static}
 
@@ -145,7 +145,7 @@ body {
 
 #btn:hover #facebook {
 	-webkit-transform: translateY(5px) rotateX(-120deg);
-  -webkit-transform: translate(0, 35px);
+  	-webkit-transform: translate(0, 35px);
 	-moz-transform: translate(0px, 35px);
 }
 
@@ -199,7 +199,7 @@ body {
     })();
 </script>
 
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js'></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js'></script>
 <script type="text/javascript">
 (function() {
   /*
@@ -208,7 +208,7 @@ body {
   jQuery('#socialstuff span.twcount').html(data.count);
   });
   */
-  jQuery.getJSON("http://graph.facebook.com/uppcoming", function(data) {
+  jQuery.getJSON("https://graph.facebook.com/uppcoming", function(data) {
   jQuery('span.fbcount').html(data.likes);
   });
 }());
@@ -217,8 +217,8 @@ body {
 <script type="text/javascript">
   $(document).ready(function() {
   function resize_viewport() {
-  	wheight = $(window).height();
-  	$("#c-outer").css('height',wheight);
+  	wHeight = $(window).height();
+  	$("#c-outer").css('height',wHeight);
   }
   $(window).bind('resize', function() {
   	resize_viewport();
